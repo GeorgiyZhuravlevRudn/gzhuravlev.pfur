@@ -16,26 +16,26 @@ author: "Журавлев Георгий Иванович"
 
 # Выполнение лабораторной работы
 
-###1. Создаем аккаунт github
+### 1. Создаем аккаунт github
 
 ![1scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/1.jpg)
-###2. Генерируем ключ для настройки VCS.
+### 2. Генерируем ключ для настройки VCS.
 ![2scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/2.jpg)
-###3. Добавляем сгенерированный ключ.
+### 3. Добавляем сгенерированный ключ.
 ![3scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/3.jpg)
-###4. Приступаем к созданию репозитория и файлов.
+### 4. Приступаем к созданию репозитория и файлов.
 ![4scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/4.jpg)
-###5. Добавляем лицензию
+### 5. Добавляем лицензию
 ![5scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/5.jpg)
-###6. Добавляем игнорируемый файл ( с помощью vs code).
+### 6. Добавляем игнорируемый файл ( с помощью vs code).
 ![6scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/6.jpg)
-###7. Инициализируем git flow.
+### 7. Инициализируем git flow.
 ![7scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/7.jpg)
-###8. Добавляем релиз и загружаем на Github.
+### 8. Добавляем релиз и загружаем на Github.
 ![8scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/8.jpg)
 ![9scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/9.jpg)
 ![10scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/10.jpg)
-###9. Получившиеся  результаты(ветви + данные).
+### 9. Получившиеся  результаты(ветви + данные).
 ![11scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/11.jpg)
 
 # Вывод

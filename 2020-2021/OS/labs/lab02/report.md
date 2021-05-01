@@ -1,73 +1,64 @@
 ---
 lang: ru-RU
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
-
-# Formatting
-toc-title: "Содержание"
-toc: true # Table of contents
-toc_depth: 2
-lof: true # List of figures
-lot: true # List of tables
-fontsize: 12pt
-linestretch: 1.5
-papersize: a4paper
-documentclass: scrreprt
-polyglossia-lang: russian
-polyglossia-otherlangs: english
-mainfont: PT Serif
-romanfont: PT Serif
-sansfont: PT Sans
-monofont: PT Mono
-mainfontoptions: Ligatures=TeX
-romanfontoptions: Ligatures=TeX
-sansfontoptions: Ligatures=TeX,Scale=MatchLowercase
-monofontoptions: Scale=MatchLowercase
-indent: true
-pdf-engine: lualatex
-header-includes:
-  - \linepenalty=10 # the penalty added to the badness of each line within a paragraph (no associated penalty node) Increasing the value makes tex try to have fewer lines in the paragraph.
-  - \interlinepenalty=0 # value of the penalty (node) added after each line of a paragraph.
-  - \hyphenpenalty=50 # the penalty for line breaking at an automatically inserted hyphen
-  - \exhyphenpenalty=50 # the penalty for line breaking at an explicit hyphen
-  - \binoppenalty=700 # the penalty for breaking a line at a binary operator
-  - \relpenalty=500 # the penalty for breaking a line at a relation
-  - \clubpenalty=150 # extra penalty for breaking after first line of a paragraph
-  - \widowpenalty=150 # extra penalty for breaking before last line of a paragraph
-  - \displaywidowpenalty=50 # extra penalty for breaking before last line before a display math
-  - \brokenpenalty=100 # extra penalty for page breaking after a hyphenated line
-  - \predisplaypenalty=10000 # penalty for breaking before a display
-  - \postdisplaypenalty=0 # penalty for breaking after a display
-  - \floatingpenalty = 20000 # penalty for splitting an insertion (can only be split footnote in standard LaTeX)
-  - \raggedbottom # or \flushbottom
-  - \usepackage{float} # keep figures where there are in the text
-  - \floatplacement{figure}{H} # keep figures where there are in the text
+title: "Лабараторная работа №2"
+author: "Журавлев Георгий Иванович"
 ---
 
 # Цель работы
+Получить опыт работы с Git. Создать аккаунт; подключить  репозиторий к Github; Пройти первичную конфигурацию; провести конфигурацию git-flow.
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
-
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
 
 # Задание
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+* Сделать отчет по предыдущей работе в формате Markdown.
 
+* Предоставить в 3-х форматах: pdf, md and docx.
 
 # Выполнение лабораторной работы
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. -@fig:001)
+###1. Создаем аккаунт github
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){ #fig:001 width=70% }
+![1scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/1.jpg)
+###2. Генерируем ключ для настройки VCS.
+![2scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/2.jpg)
+###3. Добавляем сгенерированный ключ.
+![3scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/3.jpg)
+###4. Приступаем к созданию репозитория и файлов.
+![4scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/4.jpg)
+###5. Добавляем лицензию
+![5scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/5.jpg)
+###6. Добавляем игнорируемый файл ( с помощью vs code).
+![6scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/6.jpg)
+###7. Инициализируем git flow.
+![7scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/7.jpg)
+###8. Добавляем релиз и загружаем на Github.
+![8scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/8.jpg)
+![9scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/9.jpg)
+![10scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/10.jpg)
+###9. Получившиеся  результаты(ветви + данные).
+![11scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/11.jpg)
 
-# Выводы
+# Вывод
 
-Здесь кратко описываются итоги проделанной работы.
+Благодаря этой лабораторной работе, я научился: создавать репозитории, создавать файлы и проходить процесс подтверждения, загружать файлы в репозиторий git,  делать релизы и создавать ветви.
+
+#Контрольные вопросы
+
+1. VCS – ПО для облегчения работы с изменяющиеся информацией(хранит изменяющиеся версии; может быть изменена разными людьми, если проходит работа над совместным проектом). VCS предназначена для удобства использования в проектах, например один человек написал некоторый код, который хочет поместить в основную ветвь проекта, его коллеги могут проверить и сделать заметки в виде комментариев.
+
+2. Хранилище – основное место хранения; Commit – подтверждение всех изменений и тп., для дальнейшей загрузки в репозиторий; History – история изменения; Рабочая копия – действительные папка с файлами.
+3. Централизованные системы контроля  представляют собой приложения типа клиент-сервер;( 1 основной репозиторий)(SVN)
+Распределенные системы контроля версий  позволяют хранить репозиторий (его копию) у каждого разработчика, работающего с данной системой.( множество репозиториев, взаимодействующих с сервером)(Git)
+
+4. Создание репозитория ~> создание/добавление файлов в локальную файловую систему ~> добавление в локальный репозиторий ~> подтверждение добавления ~> загрузка в онлайн репозиторий.
+
+5. -
+6. -
+
+7. Git add – adds a file to the staging area; git commit- opens chosen git editor or git commit -m “message”(commitment with a message); git push – pushes files to repository; git pull – downloads/ changes files from repository; git branch – shows branches; git status – status of your  process; git  rm “”- removes a file/es;  and so on.
+
+8. Создание файла в репозитории( лок.); загрузка файлов на удалённый репозиторий(удал.)
+
+9. Ветви – специальные разделения дерева, которые нужны для удобства использования git, например для дальнейшего merg’a.
+
+10.  “git editor”.gitignore ~>git add .gitignore~>git commit; Игнорирование нужно для исключения ненужных файлов/ файловых систем/ тп. из области работы.

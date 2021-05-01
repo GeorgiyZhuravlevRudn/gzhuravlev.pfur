@@ -24,9 +24,9 @@ author: "Журавлев Георгий Иванович"
 ### 3. Добавляем сгенерированный ключ.
 ![3scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/3.jpg)
 ### 4. Приступаем к созданию репозитория и файлов.
-![4scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/4.jpg)
+![4scrsht](gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/4.jpg)
 ### 5. Добавляем лицензию
-![5scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/5.jpg)
+![5scrsht](gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/5.jpg)
 ### 6. Добавляем игнорируемый файл ( с помощью vs code).
 ![6scrsht](/home/g_zhuravlev/github/gzhuravlev.pfur/2020-2021/OS/labs/lab02/scrsht/6.jpg)
 ### 7. Инициализируем git flow.

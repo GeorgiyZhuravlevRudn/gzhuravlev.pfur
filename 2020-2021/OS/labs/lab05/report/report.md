@@ -17,7 +17,7 @@ author: "Журавлев Георгий Иванович"
 
 ### 1. Определяем полное имя каталога
 
-        ![1scrsht](scrsht_lab5/1.jpg)
+        ![1scrsht](2020-2021/OS/labs/lab05/report/scrsht_lab5/1.jpg)
 
 ### 2. Переходим в каталог /tmp
 

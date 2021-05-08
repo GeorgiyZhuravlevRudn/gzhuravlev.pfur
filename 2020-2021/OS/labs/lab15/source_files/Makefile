@@ -1,0 +1,26 @@
+CC=gcc
+CFLAGS= -g -c
+CompileFlags= -g -o
+
+all: server client1 client2
+
+server: server.o
+	$(CC) server.o $(CompileFlags) server
+
+client1: client1.o
+	$(CC) client1.o $(CompileFlags) client1
+
+client2: client2.o
+	$(CC) client2.o $(CompileFlags) client2
+
+server.o: server.c common.h
+	$(CC) $(CFLAGS) server.c
+
+client1.o: client1.c common.h
+	$(CC) $(CFLAGS) client1.c
+
+client2.o: client2.c common.h
+	$(CC) $(CFLAGS) client2.c
+
+clean:
+	rm -rf *.o client1 client2 server

@@ -1,0 +1,15 @@
+#!/bin/bash
+for something in *
+do if test -d $something
+   then echo d
+   else echo -
+   	if test -r $something
+	then echo r
+	elif test -w $something
+	then echo w
+	elif test -x $something
+	then echo x
+	else echo ---
+	fi
+    fi
+done

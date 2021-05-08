@@ -1,3 +1,4 @@
+#include<string>
 #ifndef CalcHeader_H
 #define CalcHeader_H
 void OperationTypes();

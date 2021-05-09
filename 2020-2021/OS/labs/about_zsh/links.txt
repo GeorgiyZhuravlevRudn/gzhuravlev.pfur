@@ -1,0 +1,14 @@
+ Источники:
+        1. https://www.sitepoint.com/zsh-commands-plugins-aliases-tools/
+        2. https://github.com/romkatv/powerlevel10k
+        3. https://youtu.be/f3WUVtcR8YE
+        4. https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
+        5. https://niklan.net/blog/149
+        6. https://losst.ru/nastrojka-zsh-i-oh-my-zsh
+
+Ссылки:
+        1. https://linuxhint.com/install_zsh_shell_ubuntu_1804/ - полная установка en-US
+        2. https://losst.ru/nastrojka-zsh-i-oh-my-zsh - полная установка ru-RU
+        3. https://youtu.be/f8vbO4OfEEc - полная установка(видео)ru-RU
+        4. https://youtu.be/ZNHkS4EnXhQ - настройка тем и плагинов(видео) ru-RU
+        5. https://youtu.be/Tz4kScOIOW0 - полная установка(видео) en-US

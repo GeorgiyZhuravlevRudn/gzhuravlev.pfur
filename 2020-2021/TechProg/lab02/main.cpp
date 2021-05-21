@@ -8,6 +8,7 @@ int main(){
         unsigned usr_rows,usr_cols;
         Matrix A;
         Matrix B;
+        Matrix C;
         double scalar;
         do {
             cout << "\nWhat operation do you want to perform? Select Option number. Enter 0 to exit." << endl;
@@ -223,14 +224,24 @@ switch(option){
                 A.print();
                 cout<<"\ni= "; cin>>i;
                 cout<<"j= "; cin>>j;
-                cout<<"A["<<i<<"]["<<j<<"]="<<A(i-1,j-1)<<endl;
+                bool what=A.El_exists(i,j);
+                if(what==true){
+                double value=A.Get_element(i,j);
+                cout<<"A["<<i<<"]["<<j<<"]="<<value<<endl;
+                }
+                else{
+                        cout<<"there's no element with that index"<<endl;
+                }
                 break;
         }
         case 18:{
                 cout<<"Set element\n";
                 cout<<"row: "; cin>>i;
                 cout<<"col: "; cin>>j;
-                cout<<"Matrix["<<i<<"]["<<j<<"]= "; cin>>A(i-1,j-1);
+                double value;
+                cout<<"Matrix["<<i<<"]["<<j<<"]= "; cin>>value;
+                A.Set_element(i,j,value);
+                break;
 
         }
         case 19:{
@@ -291,7 +302,10 @@ switch(option){
                 break;
         }
         case 26:{
-
+                //+ out of class
+                C.Setparam();
+                B.SetParam();
+                A=
         }
 }
 

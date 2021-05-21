@@ -104,54 +104,6 @@ void Matrix::SetParam()
             }
         }
 }
-//Matrix operators(by 1 matrix)
-#ifdef k
-Matrix Matrix::operator+(Matrix &B)
-{
-Matrix result(m_colSize, m_rowSize);
-if(this->m_rowSize == B.getRows()|| this->m_colSize== B.getCols()){
-unsigned i,j;
-        for( i=0; i<m_rowSize;i++){
-                for(j=0; j < m_colSize; j++){
-                        result(i,j)=this->m_matrix[i][j]+B(i,j);
-                }
-        }
-}
-        return result;
-}
-Matrix Matrix::operator-(Matrix &B)
-{
-Matrix result(m_rowSize,m_colSize);
-if(this->m_rowSize == B.getRows()|| this->m_colSize== B.getCols()){
-unsigned i,j;
-        for(i=0;i < m_rowSize;i++){
-                for(j=0; j < m_colSize;j++){
-                        result(i,j)=this->m_matrix[i][j]-B(i,j);
-                }
-        }
-}
-        return result;
-}
-Matrix Matrix::operator*(Matrix &B)
-{
-Matrix result(m_rowSize,B.getCols());
-if(this->m_colSize==B.getRows()){
-    unsigned i,j,k;
-    for (i = 0; i < m_rowSize; i++)
-    {
-        for (j = 0; j < B.getCols(); j++)
-        {
-            for (k = 0; k < m_colSize; k++)
-            {
-                result(i,j)+= m_matrix[i][k] * B(k,j);
-                }
-        }
-    }
-
-}
-   return result;
-}
-#endif
 
 Matrix &Matrix::operator +=(const Matrix &B)
 {
@@ -230,6 +182,21 @@ Matrix operator*(const Matrix &A,const Matrix &B)
         return temp;
 }
 
+Matrix Matrix::operator+(const Matrix &B)
+{
+Matrix result(m_colSize, m_rowSize);
+if(this->m_rowSize == B.getRows()|| this->m_colSize== B.getCols()){
+unsigned i,j;
+        for( i=0; i<m_rowSize;i++){
+                for(j=0; j < m_colSize; j++){
+                        result(i,j)=this->m_matrix[i][j]+B(i,j);
+                }
+        }
+}
+        return result;
+}
+
+
 Matrix &Matrix::operator=(const Matrix &B)
 {
         if(&B==this)
@@ -297,7 +264,7 @@ Matrix operator-(const Matrix &A, double scalar)
 {
         Matrix temp(A);
         temp-=scalar;
-        return temp;;
+        return temp;
 }
 
 Matrix &Matrix::operator*=(double scalar)
@@ -334,9 +301,12 @@ Matrix operator/(const Matrix &A, double scalar)
         return temp;
 }
 
-double& Matrix::operator()( const unsigned &rowNum,const  unsigned &colNum)
+double& Matrix::operator()( const unsigned &rowNum,const  unsigned &colNum)const
 {
-return this->m_matrix[rowNum][colNum];
+        if(m_matrix==NULL){
+                cout<<"array doesn't exist"<<endl;
+        }
+        return this->m_matrix[rowNum][colNum];
 }
 
 void Matrix::setSize(unsigned rowSize, unsigned colSize)
@@ -395,11 +365,17 @@ void Matrix::setSize(unsigned rowSize, unsigned colSize)
 
 void Matrix::Set_element(const unsigned i, const unsigned j,const double value)
 {
+        if(m_matrix[i]==NULL){
+                cout<<"array doesn't exist, please create it to set an element"<<endl;
+        }
+        else{
         m_matrix[i][j]=value;
+        }
 }
 
-double& Matrix::Get_element(const unsigned i, const unsigned j)
+double Matrix::Get_element(const unsigned i, const unsigned j)
 {
+
         return m_matrix[i][j];
 }
 
@@ -529,4 +505,13 @@ void Matrix::alloc()
         for(unsigned i=0;i<m_rowSize;i++){
                 m_matrix[i]=new double[m_colSize];
         }
+}
+
+bool Matrix::El_exists(const unsigned i,const unsigned j){
+        bool exists=true;
+        if(getRows()< i)
+        {
+                exists=false;
+        }
+        return exists;
 }

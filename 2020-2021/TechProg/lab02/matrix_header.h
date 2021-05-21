@@ -10,6 +10,7 @@ private:
     unsigned m_colSize;
     double** m_matrix;
     void alloc();
+
 public:
     Matrix(unsigned rowSize, unsigned colSize);
     Matrix(const Matrix &);
@@ -18,6 +19,7 @@ public:
     ~Matrix();
 
     // Matrix Operations
+    Matrix operator +(const Matrix &);
     Matrix &operator +=(const Matrix &);;
     Matrix &operator -=(const Matrix &);
     Matrix &operator *=(const Matrix &);
@@ -33,20 +35,19 @@ public:
     Matrix &operator/=(double);
 
     // Other Methods
-    double& operator()(const unsigned &, const unsigned &);
+    double& operator()(const unsigned &, const unsigned &)const;
     void print();
     void SetParam();
     void Set_element(const unsigned , const unsigned, const double );
-    double& Get_element(const unsigned , const unsigned);
+    double Get_element(const unsigned , const unsigned);
     void Set_rows(unsigned);
     void Set_cols(unsigned);
     unsigned getRows() const;
     unsigned getCols() const;
     void setSize(unsigned,unsigned);
+    bool El_exists(const unsigned,const unsigned);
 
 
-    // Deflation
-    Matrix deflation(Matrix &, double&);
 };
 Matrix operator +(const Matrix&,const Matrix&);
 Matrix operator -(const Matrix&,const Matrix&);

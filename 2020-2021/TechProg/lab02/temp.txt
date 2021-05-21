@@ -1,0 +1,48 @@
+//Matrix operators(by 1 matrix)
+#ifdef k
+Matrix Matrix::operator+(Matrix &B)
+{
+Matrix result(m_colSize, m_rowSize);
+if(this->m_rowSize == B.getRows()|| this->m_colSize== B.getCols()){
+unsigned i,j;
+        for( i=0; i<m_rowSize;i++){
+                for(j=0; j < m_colSize; j++){
+                        result(i,j)=this->m_matrix[i][j]+B(i,j);
+                }
+        }
+}
+        return result;
+}
+Matrix Matrix::operator-(Matrix &B)
+{
+Matrix result(m_rowSize,m_colSize);
+if(this->m_rowSize == B.getRows()|| this->m_colSize== B.getCols()){
+unsigned i,j;
+        for(i=0;i < m_rowSize;i++){
+                for(j=0; j < m_colSize;j++){
+                        result(i,j)=this->m_matrix[i][j]-B(i,j);
+                }
+        }
+}
+        return result;
+}
+Matrix Matrix::operator*(Matrix &B)
+{
+Matrix result(m_rowSize,B.getCols());
+if(this->m_colSize==B.getRows()){
+    unsigned i,j,k;
+    for (i = 0; i < m_rowSize; i++)
+    {
+        for (j = 0; j < B.getCols(); j++)
+        {
+            for (k = 0; k < m_colSize; k++)
+            {
+                result(i,j)+= m_matrix[i][k] * B(k,j);
+                }
+        }
+    }
+
+}
+   return result;
+}
+#endif
